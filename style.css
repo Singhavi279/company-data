@@ -1,0 +1,97 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Container for the result */
+#result {
+    margin-top: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Gradient background */
+body {
+    background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0% {
+        background-color: #f2f2f2;
+    }
+
+    50% {
+        background-color: #e6e6e6;
+    }
+
+    100% {
+        background-color: #f2f2f2;
+    }
+}
+
+/* Loading message */
+#loading {
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: pulse 1s infinite;
+}
+
+/* Show loading message during API fetch */
+.loading {
+    display: block;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 12px;
+    }
+
+    table th,
+    table td {
+        padding: 6px;
+    }
+}
